@@ -226,10 +226,10 @@ static int hevc_handle_packet(AVFormatContext *ctx, PayloadContext *rtp_hevc_ctx
     }
 
     /* sanity check for correct temporal ID */
-    if (!tid) {
+    /*if (!tid) {
         av_log(ctx, AV_LOG_ERROR, "Illegal temporal ID in RTP/HEVC packet\n");
         return AVERROR_INVALIDDATA;
-    }
+    }*/
 
     /* sanity check for correct NAL unit type */
     if (nal_type > 50) {
